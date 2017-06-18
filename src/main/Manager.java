@@ -1,11 +1,10 @@
-//---------------------------------------------------------------------//
-/**チェック動作の総合管轄
- *
- *
- */
-//---------------------------------------------------------------------//
+//------------------------------------------------------------------------------------------------//
+// チェック動作の総合管轄
+//
+//------------------------------------------------------------------------------------------------//
 package main;
-import java.util.ArrayList;
+
+import java.util.ArrayList;
 
 import checker.AdressChecker;
 import checker.PassChecker;
@@ -50,7 +49,16 @@ public class Manager implements DifineI {
 		resultAdress = ac.check((String)list.get(2));
 
 		// チェック結果の文章を作成する
-		setMessage(resultUserName + "\r\n" + resultPassword + "\r\n" + resultAdress);
+		setMessage(
+				  "===判定結果======================================================="
+				+ "\r\n"
+				+ "ユーザー名: " + resultUserName
+				+ "\r\n"
+				+ "パスワード: " + resultPassword
+				+ "\r\n"
+				+ "住所      : " + resultAdress
+				+ "\r\n"
+				+ "==================================================================");
 
 		// 結果をMainに返す
 		return this.getMessage();

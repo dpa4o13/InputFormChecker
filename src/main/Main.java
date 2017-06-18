@@ -5,8 +5,7 @@
  * ・ユーザー名…英大文字・英小文字・数字（いずれも半角）
  * ・パスワード…英大文字・英小文字・数字・特定の記号がすべて含まれている
  *   （かついずれも半角）
- * ・住所…すべて全角で、漢字・かな・カナ、数字、ハイフン（ー）のみ
- *   （空白は許可する）
+ * ・住所…すべて全角（空白は許可する）
  */
 //---------------------------------------------------------------------//
 package main;
@@ -18,7 +17,7 @@ import difine.DifineI;
 /**
  *
  * @author m4usta13ng
- *
+ * @version 1.00
  */
 public class Main implements DifineI{
 
@@ -30,8 +29,8 @@ public class Main implements DifineI{
 	public static void main(String[] args) {
 
 		// 入力される文字を記載する
-		final String USER_NAME 	= "dpa4o13";	// ユーザー名
-		final String PASS 		= "Kaname011$";	// パスワード
+		final String USER_NAME 	= "Dpa4o13";	// ユーザー名
+		final String PASS 		= "Abc1000?";	// パスワード
 		final String ADRESS 	=
 				"東京都千代田区１－２－３ レジデンスホゲホゲ"; // 住所
 
